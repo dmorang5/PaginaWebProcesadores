@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y los bordes dentro del ancho y alto del elemento */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5ff; /* Fondo relacionado con #6366f1 */
+    overflow-x: hidden;
+}
+
+/* Secciones */
+section {
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 10px auto;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #4f46e5; /* Azul morado */
+}
+
+/* Contenedores de tarjetas */
+.fabricantes, .comparativas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjetas */
+.card {
+    background: #f4f5ff; /* Fondo suave para armonía con navbar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #4f46e5; /* Azul morado */
+}
+
+.card p {
+    padding: 0 15px 15px;
+    color: #333; /* Texto oscuro */
+}
+
+/*Estilo para tablas*/
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #6366f1; /* Fondo morado */
+    color: white; /* Texto blanco */
+    text-align: left;
+    font-weight: bold;
+}
+
+table thead th {
+    padding: 15px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 0.9em;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    transition: background-color 0.3s ease-in-out; /* Efecto hover */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f4f5ff; /* Fondo alternado para filas pares */
+}
+
+table tbody tr:hover {
+    background-color: #e0e7ff; /* Fondo al pasar el ratón */
+}
+
+table tbody td {
+    padding: 15px;
+    color: #333; /* Texto oscuro */
+    font-size: 0.95em;
+}
+
+table tbody td:first-child {
+    font-weight: bold; /* Resalta la primera columna */
+    color: #4f46e5; /* Azul morado */
+}
+
+table tfoot {
+    background-color: #f4f5ff; /* Fondo del pie de tabla */
+    color: #4f46e5; /* Texto azul */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* @media (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+    }
+
+    table thead th, table tbody td {
+        padding: 10px;
+    }
+} */
+/* Estilo de la tabla para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajuste del tamaño de la tabla */
+    table {
+        font-size: 0.9em;
+        width: 100%;
+        overflow-x: auto; /* Habilita desplazamiento horizontal si es necesario */
+        display: block;
+    }
+
+    /* Ajuste de los encabezados y celdas */
+    table thead {
+        display: none; /* Oculta los encabezados de la tabla en móviles */
+    }
+
+    table tbody tr {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+    }
+
+    table tbody td {
+        display: block;
+        text-align: right; /* Alineación a la derecha para estilo de lista */
+        padding: 10px;
+        position: relative;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        color: #4f46e5; /* Azul morado */
+    }
+
+    /* Estilo para los elementos de la tabla cuando se muestra en formato lista */
+    table tbody td:first-child {
+        font-weight: bold; /* Resalta el primer dato (nombre del procesador) */
+        color: #4f46e5; /* Azul morado */
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #6366f1; /* Mismo color que el navbar */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-top-left-radius: 15px; /* Esquinas redondeadas */
+    border-top-right-radius: 15px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    background-color: #4f46e5; /* Efecto hover similar al navbar */
+    color: #f0f0f0;
+}
+
+/* Iconos opcionales para enlaces */
+footer a i {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .card h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Ocultar el input toggle */
+.modal-toggle {
+    display: none;
+}
+
+/* Estilo del modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    margin-bottom: 15px;
+    color: #4f46e5;
+}
+
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-content ul li {
+    margin: 5px 0;
+}
+
+.modal-close {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    background-color: #4f46e5;
+}
+
+/* Mostrar el modal cuando el input está marcado */
+.modal-toggle:checked + .modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+

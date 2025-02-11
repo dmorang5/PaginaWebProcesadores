@@ -1,0 +1,59 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5ff; 
+} */
+
+/* Estilo del Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6366f1; /* Morado suave */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:hover {
+    background-color: #4f46e5; /* Color más oscuro al pasar el ratón */
+    color: #e0e7ff; /* Blanco más suave */
+}
+
+.navbar a.active {
+    background-color: white;
+    color: #6366f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos y texto alineados */
+.navbar a i {
+    margin-right: 8px;
+}
+
+/* Menú en pantallas grandes */
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap; /* Esto hace que los enlaces se acomoden en varias filas si no caben en una sola */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar .menu a {
+        margin: 10px 0; /* Ajustamos el margen para pantallas más pequeñas */
+    }
+}

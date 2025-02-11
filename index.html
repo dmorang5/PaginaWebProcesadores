@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesadores</title>
+    <link rel="icon" href="img/procesador.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/body.css">
+</head>
+<body>
+    <!-- Sección de navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href=""><i>🏠</i> Inicio</a>
+            <a href="#fabricantes"><i>🏭</i>Fabricantes</a>
+            <a href="#procesadores"><i>📱</i>Procesadores</a>
+            <a href="#comparativas"><i>📅</i>Comparativas</a>
+        </div>
+    </div>
+
+    <!-- Sección de introducción -->
+    <section id="introduccion">
+        <h2>¿Qué es un Procesador Móvil?</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            El procesador de un celular es un dispositivo de interpretación de datos electrónico que ejecuta 
+            todas las aplicaciones desplegadas por el aparato. Esto incluye las funciones “invisibles” o de 
+            fondo que hacen posible el funcionamiento cotidiano de tu celular. 
+            También incluye el soporte para las características de hardware y software del dispositivo, 
+            llámese la cámara, la seguridad, el wifi, la performance gráfica, la conectividad Bluetooth…
+        </p>
+        <p style="text-align: center; max-width: 800px; margin: auto;">
+            Los procesadores móviles son el núcleo de los dispositivos inteligentes modernos. 
+            Diseñados para ofrecer un equilibrio entre rendimiento y eficiencia energética, 
+            estos chips permiten ejecutar aplicaciones, gestionar tareas multitarea y brindar 
+            experiencias inmersivas mediante gráficos avanzados e inteligencia artificial. 
+            Desde teléfonos inteligentes hasta tabletas y dispositivos portátiles, los 
+            procesadores móviles son esenciales en la tecnología actual.
+        </p>
+    </section>
+
+    <!-- Sección de fabricantes -->
+    <section id="fabricantes">
+        <h2>Principales Fabricantes</h2>
+        <div class="fabricantes">
+            <!-- Card de Qualcomm con modal -->
+            <div class="card">
+                <label for="modal-qualcomm">
+                    <img src="img/qualcomm-snapdragon-8-gen-2.jpg" alt="Qualcomm">
+                    <h3>Qualcomm</h3>
+                    <p>Reconocido por su serie Snapdragon, ofrece procesadores para dispositivos Android con un equilibrio sobresaliente entre rendimiento y eficiencia energética.</p>
+                </label>
+            </div>
+
+            <!-- Modal Qualcomm -->
+            <input type="checkbox" id="modal-qualcomm" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Procesadores de Qualcomm</h3>
+                    <ul>
+                        <li>Snapdragon 8 Gen 2</li>
+                        <li>Snapdragon 888</li>
+                        <li>Snapdragon 765G</li>
+                    </ul>
+                    <label for="modal-qualcomm" class="modal-close">Cerrar</label>
+                </div>
+            </div>
+
+            <!-- Card de Apple con modal -->
+            <div class="card">
+                <label for="modal-apple">
+                    <img src="img/Apple Bionic A16.png" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>Diseña sus propios procesadores de la serie A para dispositivos iPhone y iPad, conocidos por su integración optimizada y alto rendimiento.</p>
+                </label>
+            </div>
+
+            <!-- Modal Apple -->
+            <input type="checkbox" id="modal-apple" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Procesadores de Apple</h3>
+                    <ul>
+                        <li>A16 Bionic</li>
+                        <li>A15 Bionic</li>
+                        <li>A14 Bionic</li>
+                    </ul>
+                    <label for="modal-apple" class="modal-close">Cerrar</label>
+                </div>
+            </div>
+
+            <!-- Card de MediaTek con modal -->
+            <div class="card">
+                <label for="modal-mediatek">
+                    <img src="img/MediaTek Dimensity 9000.jpeg" alt="MediaTek">
+                    <h3>MediaTek</h3>
+                    <p>Fabricante de la serie Dimensity y Helio, ofrece soluciones competitivas para dispositivos de gama baja, media y alta, con un enfoque en la relación calidad-precio.</p>
+                </label>
+            </div>
+
+            <!-- Modal MediaTek -->
+            <input type="checkbox" id="modal-mediatek" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Procesadores de MediaTek</h3>
+                    <ul>
+                        <li>Dimensity 9000</li>
+                        <li>Dimensity 1200</li>
+                        <li>Helio G95</li>
+                    </ul>
+                    <label for="modal-mediatek" class="modal-close">Cerrar</label>
+                </div>
+            </div>
+
+            <!-- Card de Samsung con modal -->
+            <div class="card">
+                <label for="modal-samsung">
+                    <img src="img/exynos.jpg" alt="Samsung">
+                    <h3>Samsung</h3>
+                    <p>Con su serie Exynos, Samsung desarrolla procesadores avanzados utilizados en sus dispositivos Galaxy en varias regiones.</p>
+                </label>
+            </div>
+
+            <!-- Modal Samsung -->
+            <input type="checkbox" id="modal-samsung" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Procesadores de Samsung</h3>
+                    <ul>
+                        <li>Exynos 2100</li>
+                        <li>Exynos 2200</li>
+                        <li>Exynos 990</li>
+                    </ul>
+                    <label for="modal-samsung" class="modal-close">Cerrar</label>
+                </div>
+            </div>
+
+            <!-- Card de HiSilicon con modal -->
+            <div class="card">
+                <label for="modal-hisilicon">
+                    <img src="img/kirin.jpg" alt="HiSilicon">
+                    <h3>HiSilicon</h3>
+                    <p>Subsidiaria de Huawei, conocida por su serie Kirin, enfocada en inteligencia artificial y fotografía en dispositivos de la marca.</p>
+                </label>
+            </div>
+
+            <!-- Modal HiSilicon -->
+            <input type="checkbox" id="modal-hisilicon" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Procesadores de HiSilicon</h3>
+                    <ul>
+                        <li>Kirin 9000</li>
+                        <li>Kirin 990</li>
+                        <li>Kirin 810</li>
+                    </ul>
+                    <label for="modal-hisilicon" class="modal-close">Cerrar</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de procesadores más destacados -->
+    <section id="procesadores">
+        <h2>Procesadores más destacados</h2>
+        <div class="fabricantes">
+            <div class="card">
+                <img src="img/qualcomm-snapdragon-8-gen-2.jpg" alt="Qualcomm Snapdragon">
+                <h3>Qualcomm Snapdragon 8 Gen 2</h3>
+                <p>Es considerado uno de los mejores procesadores móviles en términos de rendimiento y eficiencia energética.</p>
+            </div>
+            <div class="card">
+                <img src="img/Apple Bionic A16.png" alt="Apple Bionic">
+                <h3>Apple Bionic A16</h3>
+                <p>El Bionic A16 es el cerebro detrás de los modelos de iPhone 14 Pro, iPhone 14 Pro Max y el nuevo iPhone 15. </p>
+            </div>
+            <div class="card">
+                <img src="img/MediaTek Dimensity 9000.jpeg" alt="MediaTek Dimensity">
+                <h3>MediaTek Dimensity 9000</h3>
+                <p>El Dimensity 9000 es conocido por su capacidad para ejecutar aplicaciones y juegos exigentes de manera suave y sin problemas como algunos celulares de Honor y Xiaomi ya utilizan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de comparativas -->
+    <section id="comparativas">
+        <h2>Comparativa de Procesadores</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+                <tr>
+                    <th>Procesador</th>
+                    <th>Rendimiento</th>
+                    <th>Eficiencia Energética</th>
+                    <th>Usos Principales</th>
+                    <th>Características Destacadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Qualcomm Snapdragon 8 Gen 2</strong></td>
+                    <td>Alto rendimiento en juegos y multitarea.</td>
+                    <td>Optimizado para reducir el consumo en tareas intensivas.</td>
+                    <td>Dispositivos Android de gama alta.</td>
+                    <td>Compatible con tecnologías avanzadas como Wi-Fi 7, Ray Tracing y cámaras de alta resolución.</td>
+                </tr>
+                <tr>
+                    <td><strong>Apple Bionic A16</strong></td>
+                    <td>Rendimiento líder en el mercado para aplicaciones intensivas.</td>
+                    <td>Muy eficiente gracias a su integración con iOS.</td>
+                    <td>iPhone 14 Pro, iPhone 14 Pro Max, y iPhone 15.</td>
+                    <td>Integración de Neural Engine para inteligencia artificial y aprendizaje automático.</td>
+                </tr>
+                <tr>
+                    <td><strong>MediaTek Dimensity 9000</strong></td>
+                    <td>Gran rendimiento en aplicaciones exigentes y juegos.</td>
+                    <td>Buena eficiencia energética para la gama alta.</td>
+                    <td>Celulares Honor, Xiaomi y otras marcas de gama alta.</td>
+                    <td>Primer procesador con arquitectura de 4nm y soporte para conectividad 5G avanzada.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>    
+    
+    <!-- Sección de footer -->
+    <footer id="footer">
+        <p>© 2024 Procesadores Móviles. Todos los derechos reservados.</p>
+        <p>Diseñado con pasión por la tecnología.</p>
+        <div>
+            <a href=""><i>⬆️</i> Volver al Inicio</a>
+        </div>
+    </footer> 
+
+</body>
+</html>
